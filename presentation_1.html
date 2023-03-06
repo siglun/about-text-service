@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>the hows and whys of text service</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section>
+          <h2>Content tree</h2>
+          <img src="tree.jpg" alt="the content tree"/>
+        </section>
+	<section>
+	  <h2>A. The service and the data</h2>
+	  <p  class="fragment grow">1. A demonstration of the service and its functions and architecture</p>
+	  <p  class="fragment grow">2. The modelling of text. OHCO, GODDAG structures and TexMECS (a
+	  superficial look) and why we use milestones and containers.</p>
+	  <p  class="fragment grow">3. The text-service data sources</p>
+	</section>
+        <section  data-auto-animate="data-auto-animate">
+          <h2>Jeppe &amp; Nille</h2>
+	  <pre data-id="code-animation">
+            <code class="hljs tag" data-trim data-line-numbers>
+&lt;sp xml:id="idm139796482829056">
+  &lt;speaker xml:id="idm139796482828800">JEPPE.&lt;/speaker>
+  &lt;p xml:id="idm139796482828384">Har du lagt Mester Erich fra dig Nille?&lt;/p>
+&lt;/sp>
+&lt;sp xml:id="idm139796482827808">
+  &lt;speaker xml:id="idm139796482827552">NILLE.&lt;/speaker>
+  &lt;p xml:id="idm139796482827136">Ja jeg har, men jeg veed strax hvor hand er at finde igien,
+  dersom du icke er hørtig. Her hid! see hvor hand kryber. Her
+  hid! du skal til Byen at kiøbe mig to Pund grøn Sæbe; see der
+  har du Penge dertil. Men hør! hvis du inden fire Timer icke er
+  her paa Stædet igien, da skal Mester Erich dantze Polsk Dantz
+  paa din Ryg.&lt;/p>
+&lt;/sp>
+&lt;sp xml:id="idm139796482825856">
+  &lt;speaker xml:id="idm139796482825600">JEPPE.&lt;/speaker>
+  &lt;p xml:id="idm139796482825184">Hvor kand jeg gaae fire Miil i fire Timer Nille?&lt;/p>
+&lt;/sp>
+            </code>
+          </pre>
+        </section>
+	<section  data-auto-animate="data-auto-animate">
+          <h2>a sonet</h2>
+	  <pre data-id="code-animation">
+            <code class="hljs tag" data-trim data-line-numbers>
+&lt;div decls="#biblid68251">
+  &lt;head>Jeg elsker —&lt;/head>
+  &lt;lg>
+    &lt;l>Jeg elsker Himlens høje Harmoni,&lt;/l>
+    &lt;l>dens Purpurblomst, som blaaner i det Fjærne,&lt;/l>
+    &lt;l>den Fred, som risler ned fra Nattens Stjerne,&lt;/l>
+    &lt;l>det Glimt af Gud, der glider mig forbi;&lt;/l>
+  &lt;/lg>
+  &lt;lg>
+    &lt;l>og Evighedens tavse Melodi,&lt;/l>
+    &lt;l>de svundne Slægters kaldende Orkester,&lt;/l>
+    &lt;l>et Tonehav om en usynlig Mester,&lt;/l>
+    &lt;l>en Klang af Gud, der bruser mig forbi;&lt;/l>
+  &lt;/lg>
+  &lt;lg>
+    &lt;l>en magisk Magt fra Hjertets mørke Celle,&lt;/l>
+    &lt;l>de stærke Længsler, som mod Lyset vælde,&lt;/l>
+    &lt;l>Naturens evigunge Fantasi;&lt;/l>
+  &lt;/lg>
+  &lt;lg>
+    &lt;l>det Liv, der spirer midt i selve Døden,&lt;/l>
+    &lt;l>den Sol, der stiger midt i Aftenrøden,&lt;/l>
+    &lt;l>— o Glimt af Gud, der glider mig forbi!&lt;/l>
+  &lt;/lg>
+  &lt;p>
+    &lt;date>12. Septbr. 1893.&lt;/date>
+  &lt;/p>
+&lt;/div>
+            </code>
+          </pre>
+	</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js" type=""></script>
+    <script src="plugin/notes/notes.js" type=""></script>
+    <script src="plugin/markdown/markdown.js" type=""></script>
+    <script src="plugin/highlight/highlight.js" type=""></script>
+    <script>
+      //<!--
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+      //-->
+    </script>
+  </body>
+</html>
