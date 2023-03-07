@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>the hows and whys of text service</title>
+    <title>the service and the data</title>
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
@@ -16,21 +16,40 @@
   <body>
     <div class="reveal">
       <div class="slides">
+
 	<section>
-          <h2>Content tree</h2>
-          <img src="tree.jpg" alt="the content tree"/>
-        </section>
-	<section>
-	  <h2>A. The service and the data</h2>
-	  <p  class="fragment grow">1. A demonstration of the service and its functions and architecture</p>
-	  <p  class="fragment grow">2. The modelling of text. OHCO, GODDAG structures and TexMECS (a
-	  superficial look) and why we use milestones and containers.</p>
-	  <p  class="fragment grow">3. The text-service data sources</p>
+	  <h2>A. the service and the data</h2>
+	  <ul>
+	  <li  class="fragment grow"><a href="#functions">1. a demonstration of the service and its functions and architecture</a></li>
+	  <li  class="fragment grow"><a href="#modelling">2. the modelling of text</a></li>
+	  <li  class="fragment grow"><a href="#data-source">3. the text-service data sources</a></li>
+          </ul>
 	</section>
-        <section  data-auto-animate="data-auto-animate">
-          <h2>Jeppe &amp; Nille</h2>
-	  <pre data-id="code-animation">
-            <code class="hljs tag" data-trim data-line-numbers>
+        <section id="functions" >
+	  <section>
+            <h2>A demonstration</h2>
+            <a target="_blank" href="https://tekster.kb.dk"><img src="tekst-service-screen-shot.png" alt="text service screen shot"/></a>
+          </section>
+          <section>
+            <h2>Result set and facets</h2>
+            <ul>
+              <li><a href="https://tekster.kb.dk/text?editorial=no&amp;match=phrase&amp;search_field=Alt">Result set</a></li>
+              <li><a href="text-service-facets.png"><img src="text-service-facets.png" alt="facets"/></a></li>
+            </ul>
+            
+          </section>
+        </section>
+        <section id="modelling">
+          <section>
+            <h2>Modelling text as a tree</h2>
+            <img src="tree.jpg" alt="the content tree"/>
+            <p>OHCO, GODDAG structures and TexMECS</p>
+            <p>why we use milestones and containers</p>
+          </section>
+          <section>
+            <h2>Jeppe &amp; Nille</h2>
+	    <pre data-id="code-animation">
+              <code class="hljs tag" data-trim="data-trim" data-line-numbers="data-line-numbers">
 &lt;sp xml:id="idm139796482829056">
   &lt;speaker xml:id="idm139796482828800">JEPPE.&lt;/speaker>
   &lt;p xml:id="idm139796482828384">Har du lagt Mester Erich fra dig Nille?&lt;/p>
@@ -48,13 +67,13 @@
   &lt;speaker xml:id="idm139796482825600">JEPPE.&lt;/speaker>
   &lt;p xml:id="idm139796482825184">Hvor kand jeg gaae fire Miil i fire Timer Nille?&lt;/p>
 &lt;/sp>
-            </code>
-          </pre>
-        </section>
-	<section  data-auto-animate="data-auto-animate">
-          <h2>a sonet</h2>
-	  <pre data-id="code-animation">
-            <code class="hljs tag" data-trim data-line-numbers>
+              </code>
+            </pre>
+          </section>
+	  <section  data-auto-animate="data-auto-animate">
+            <h2>a sonet</h2>
+	    <pre data-id="code-animation">
+              <code class="hljs tag" data-trim="data-trim" data-line-numbers="data-line-numbers">
 &lt;div decls="#biblid68251">
   &lt;head>Jeg elsker —&lt;/head>
   &lt;lg>
@@ -85,7 +104,12 @@
 &lt;/div>
             </code>
           </pre>
-	</section>
+	  </section>
+        </section>
+        <section id="data-sources">
+          <h2 class="ordinary heading">the text-service data sources</h2>
+          
+        </section>
       </div>
     </div>
 
